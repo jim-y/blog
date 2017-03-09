@@ -1,0 +1,71 @@
+@import "../../utilities/variables";
+
+.header {
+  position: relative;
+}
+
+.header--md {
+  height: calc(100vh * 0.66);
+
+  @media screen and (max-width: $desktop-breakpoint) {
+    height: 400px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    height: 400px;
+  }
+}
+
+.header--calm-darya {
+  background: #5f2c82; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header--moonrise {
+  background: #DAE2F8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #DAE2F8 , #D6A4A4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #DAE2F8 , #D6A4A4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header--titanium {
+  background: #283048; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #283048 , #859398); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #283048 , #859398); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header--midnight_city {
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header--steel_grey {
+  background: #1F1C2C; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1F1C2C , #928DAB); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1F1C2C , #928DAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header--flickr {
+  background: #ff0084; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff0084 , #33001b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff0084 , #33001b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header__title {
+  padding: 60px 0;
+  padding-left: 10%;
+  margin: 0 0;
+}
+
+.header__title--white {
+  color: white;
+}
+
+.header__svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}

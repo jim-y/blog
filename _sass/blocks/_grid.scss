@@ -1,0 +1,11 @@
+.o-layout {
+  margin-top: -275px;
+
+  @media screen and (max-width: $desktop-breakpoint) {
+    margin-top: -225px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin-top: -225px;
+  }
+}

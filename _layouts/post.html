@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="c-post c-post--centered mdl-cell--12-col mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title header--calm-darya">
+    <div class="c-post__header">
+      <div class="c-post__header-content">
+        <div class="mdl-layout">
+          <h1 class="c-post__title mdl-typography--display-1 mdl-color-text--white">{{ page.title | escape }}</h1>
+          <span class="c-post__subtitle mdl-list__item-sub-title mdl-color-text--white">
+            {{ page.date | date: "%b %-d, %Y" }} | {{ page.tags | join: ' - ' }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-post__content mdl-card__supporting-text">
+    {{ page.content }}
+  </div>
+  <div class="c-post__actions mdl-card__actions mdl-card--border mdl-navigation">
+    <div class="mdl-layout-spacer"></div>
+    <button id="demo-menu-top-right"
+            class="mdl-button mdl-js-button mdl-button--accent">
+      Share
+    </button>
+
+    <ul class="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
+        data-mdl-for="demo-menu-top-right">
+      <li class="mdl-menu__item">Some Action</li>
+      <li class="mdl-menu__item">Another Action</li>
+      <li disabled class="mdl-menu__item">Disabled Action</li>
+      <li class="mdl-menu__item">Yet Another Action</li>
+    </ul>
+
+    <a href="{{ site.url }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+      Back
+    </a>
+  </div>
+</div>

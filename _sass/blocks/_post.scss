@@ -1,0 +1,73 @@
+@import "../utilities/variables";
+
+.c-post {
+  max-width: 900px;
+  border: 1px solid white;
+
+  @media screen and (max-width: $desktop-breakpoint) {
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    max-width: 90%;
+  }
+}
+
+.c-post--preview {
+  .c-post__content {
+    height: 150px;
+  }
+}
+
+.c-post--centered {
+  margin: 30px auto;
+}
+
+.c-post__header {}
+
+.c-post__header-content {
+  padding: 0 0;
+  height: auto;
+}
+
+.c-post__avatar {
+  position: relative;
+  margin-right: 4px !important;
+}
+
+.c-post__avatar-letter {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  margin-top: -10px;
+
+  left: 50%;
+  margin-left: -12px;
+}
+
+.c-post__title {
+  margin: 0;
+}
+
+.c-post__subtitle {
+  font-size: 10px !important;
+  line-height: 14px !important;
+}
+
+.c-post__actions {}
+
+.c-post__tags-chip {
+  margin-right: 2px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 4px;
+  border-radius: 3px;
+  min-width: 40px;
+
+  .mdl-chip__text {
+    font-size: 10px;
+  }
+}
