@@ -27,6 +27,9 @@ github_username: jim-y
 # Custom vars
 version: 0.0.1
 
+sass:
+    sass_dir: _sass
+
 exclude:
   - Gemfile
   - Gemfile.lock
