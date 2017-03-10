@@ -34,7 +34,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-repository: jim-y/blog.git
-
-github:
-  repo: https://github.com/jim-y/blog.git
+repository: https://github.com/jim-y/blog
