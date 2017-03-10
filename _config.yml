@@ -12,7 +12,7 @@ title:  'Attila Kling blog'
 tagline: 'blog about programming'
 description: 'A technical blog about programming'
 url: 'http://localhost:4000'
-baseurl: '/'
+baseurl: '/blog'
 #paginate: 5
 
 #Personal
@@ -34,4 +34,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-repository: https://github.com/jim-y/blog
+repository: jim-y/blog
