@@ -23,8 +23,6 @@ author:
   email: jimmyfly10@gmail.com
   twitter: '@attilakling'
 
-github: jim-y
-
 # Custom vars
 version: 0.0.1
 
@@ -35,4 +33,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-repository: jim-y/blog
+repository: 'jim-y/blog'
