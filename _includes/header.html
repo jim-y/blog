@@ -1,6 +1,6 @@
 <header class="header header--md header--calm-darya">
   <h1 class="header__title header__title--white mdl-typography--display-3 u-elem-clickable">
-    {% if jekyll.environment == production %}
+    {% if jekyll.environment == "production" %}
     <a class="header__author-name" href="{{ site.github.url }}">{{ site.author.name }}</a>
     {% else %}
     <a class="header__author-name" href="{{ site.home }}">{{ site.author.name }}</a>
