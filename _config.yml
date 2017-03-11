@@ -13,7 +13,6 @@ tagline: 'blog about programming'
 description: 'A technical blog about programming'
 url: 'http://localhost:4000'
 baseurl: '/blog'
-home: 'http://localhost:4000/blog/'
 #paginate: 5
 
 #Personal

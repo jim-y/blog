@@ -1,12 +1,7 @@
 <header class="header header--md header--calm-darya">
   <h1 class="header__title header__title--white mdl-typography--display-3 u-elem-clickable">
-    {% if jekyll.environment == "production" %}
     <a class="header__author-name" href="{{ site.github.url }}">{{ site.author.name }}</a>
-    {% else %}
-    <a class="header__author-name" href="{{ site.home }}">{{ site.author.name }}</a>
-    {% endif %}
     <p class="mdl-typography--title u-elem--clickable">{{ site.author.twitter }}</p>
-    <p class="mdl-typography--title u-elem--clickable">{{ site.github.url }}</p>
   </h1>
   <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
     <polygon fill="white" points="0,100 100,0 100,100"/>
