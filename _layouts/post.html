@@ -32,9 +32,10 @@ layout: default
       <li disabled class="mdl-menu__item">Disabled Action</li>
       <li class="mdl-menu__item">Yet Another Action</li>
     </ul>
-
-    <a href="{{ site.url | append:site.baseurl | append: '/' }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
-      Back
-    </a>
+    {% if jekyll.environment == production %}
+    <a href="{{ site.github.url }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">Back</a>
+    {% else %}
+    <a href="{{ site.home }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">Back</a>
+    {% endif %}
   </div>
 </div>
