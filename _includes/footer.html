@@ -1,3 +1,11 @@
+<div>
+  <ul>
+    {% for stuff in site.github %}
+      <span>{{ stuff }} - {{ site.github[stuff] }}</span>
+    {% endfor %}
+  </ul>
+</div>
+
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
     <div class="mdl-logo">Title</div>
