@@ -5,10 +5,3 @@ _site
 
 # Webstorm
 .idea
-
-# Turning off firebase lambdas for now
-functions
-public
-.firebaserc
-database.rules.json
-firebase.json

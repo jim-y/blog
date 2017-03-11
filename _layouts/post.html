@@ -33,7 +33,7 @@ layout: default
       <li class="mdl-menu__item">Yet Another Action</li>
     </ul>
 
-    <a href="{{ site.url }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+    <a href="{{ site.url | append:site.baseurl | append: '/' }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
       Back
     </a>
   </div>

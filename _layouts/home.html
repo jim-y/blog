@@ -25,14 +25,14 @@ layout: default
       <div class="c-post__actions mdl-card__actions mdl-card--border mdl-list">
         <div class="c-post__tags mdl-list__item">
           {% for tag in post.tags %}
-          <div class="c-post__tags-chip u-text--centered u-elem--clickable mdl-chip mdl-color--accent">
+          <div class="c-post__tags-chip u-text--centered u-elem--clickable mdl-chip mdl-color--primary">
               <span class="mdl-chip__text mdl-color-text--white">tag:{{ tag }}</span>
           </div>
           {% endfor %}
         </div>
         <div class="mdl-list__item u-elem--no-vert-padding">
           <div class="mdl-layout-spacer"></div>
-          <a href="{{ post.url }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+          <a href="{{ post.url | prepend:site.baseurl }}" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
             Read more
           </a>
         </div>

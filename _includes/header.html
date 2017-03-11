@@ -1,7 +1,8 @@
 <header class="header header--md header--calm-darya">
-  <h1 class="header__title header__title--white mdl-typography--display-3">
-    Kling Attila
-    <p class="mdl-typography--title">@attilakling</p>
+  <h1 class="header__title header__title--white mdl-typography--display-3 u-elem-clickable">
+    <a class="header__author-name" href="#">{{ site.author.name }}</a>
+    <p class="mdl-typography--title u-elem--clickable">@{{ site.twitter_username }}</p>
+    <p class="mdl-typography--title u-elem--clickable">{{ jekyll.environment }}</p>
   </h1>
   <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
     <polygon fill="white" points="0,100 100,0 100,100"/>
