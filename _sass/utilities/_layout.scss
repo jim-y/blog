@@ -1,8 +1,9 @@
-.u-text--centered {
-  text-align: center;
-}
-
-.u-elem--no-vert-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
+.o-flex { display: flex; }
+.o-flex__direction--row { flex-direction: row; }
+.o-flex__direction--column { flex-direction: column; }
+.o-flex__align-h--center { justify-content: center; }
+.o-flex__align-h--start { justify-content: flex-start; }
+.o-flex__align-h--end { justify-content: flex-end; }
+.o-flex__align-v--center { align-items: center; }
+.o-flex__align-v--start { align-items: flex-start; }
+.o-flex__align-v--end { align-items: flex-end; }

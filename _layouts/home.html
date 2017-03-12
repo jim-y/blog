@@ -13,14 +13,16 @@ layout: default
               <div class="mdl-list__item-avatar c-post__avatar mdl-color--primary-contrast">
                 <span class="c-post__avatar-letter mdl-color-text--primary">{{ post.title | slice: 0 }}</span>
               </div>
-              <h2 class="c-post__title mdl-card__title-text mdl-color-text--white">{{ post.title | slice: 1, post.title.size | escape }}</h2>
-              <span class="c-post__subtitle mdl-list__item-sub-title mdl-color-text--white">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <div class="o-flex o-flex__direction--column o-flex__align-v--start">
+                <h2 class="c-post__title mdl-card__title-text mdl-color-text--white">{{ post.title | slice: 1, post.title.size | escape }}</h2>
+                <span class="c-post__subtitle mdl-list__item-sub-title mdl-color-text--white">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="c-post__content mdl-card__supporting-text">
-        {{ post.excerpt }}
+        {{ post.excerpt | markdownify }}
       </div>
       <div class="c-post__actions mdl-card__actions mdl-card--border mdl-list">
         <div class="c-post__tags mdl-list__item">

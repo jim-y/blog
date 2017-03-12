@@ -1,6 +1,9 @@
+@import "utilities/layout";
+@import "utilities/variables";
+@import "utilities/utils";
+@import "utilities/typography";
+
+@import "blocks/base";
 @import "blocks/header/header";
 @import "blocks/grid";
 @import "blocks/post";
-
-@import "utilities/layout";
-@import "utilities/variables";

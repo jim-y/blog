@@ -1,5 +1,3 @@
-@import "../utilities/variables";
-
 .c-post {
   max-width: 900px;
   border: 1px solid white;
@@ -9,40 +7,33 @@
   }
 
   @media screen and (max-width: $tablet-breakpoint) {
-    max-width: 90%;
+    max-width: 90vw;
   }
 }
 
-.c-post--preview {
-  .c-post__content {
-    max-height: 300px;
-    margin: 0 0 16px 0;
+.c-post__content {}
 
-    @media screen and (max-width: $desktop-breakpoint) {
-      max-height: 150px;
-    }
+.c-post--preview .c-post__content {
+  max-height: 200px;
+  height: 200px;
 
-    @media screen and (max-width: $tablet-breakpoint) {
-      max-height: 150px;
-    }
+  @media screen and (max-width: $desktop-breakpoint) {
+    max-height: 150px;
+    height: 150px;
+  }
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    max-height: none;
+    height: inherit;
   }
 }
 
-.c-post--centered {
-  margin: 30px auto;
-}
-
+.c-post--preview .c-post__content p { margin: auto; }
+.c-post--centered { margin: 30px auto; }
 .c-post__header {}
-
-.c-post__header-content {
-  padding: 0 0;
-  height: auto;
-}
-
-.c-post__avatar {
-  position: relative;
-  margin-right: 4px !important;
-}
+.c-post__header-content { padding: 0 30px 0 0; height: auto; }
+.c-post__header-content .mdl-list__item-primary-content { height: auto; }
+.c-post__avatar { position: relative; margin-right: 4px !important; }
 
 .c-post__avatar-letter {
   font-family: 'Roboto Mono', monospace;
@@ -52,20 +43,12 @@
   width: 40px;
   top: 50%;
   margin-top: -10px;
-
   left: 50%;
   margin-left: -12px;
 }
 
-.c-post__title {
-  margin: 0;
-}
-
-.c-post__subtitle {
-  font-size: 10px !important;
-  line-height: 14px !important;
-}
-
+.c-post__title { margin: 0; }
+.c-post__subtitle { font-size: 10px !important; line-height: 14px !important; }
 .c-post__actions {}
 
 .c-post__tags-chip {
